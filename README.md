@@ -1,6 +1,33 @@
 # Lighthouse CI / POC
 
-## 1. Start LHCI server
+
+## 1. In a nutshell
+
+- start the server
+- run the wizard
+- work in main branch: create a web page, analyze it and upload data to server
+
+Steps for one iteration (i.e. one run of LHCI for a webpage):
+
+1. Create first web page `index-0.html` in `static-content/`
+2. Commit the page in main branch
+3. Analyze the page with:
+
+```
+lhci collect --staticDistDir=./../static-content
+```
+
+4. Upload results:
+
+```
+lhci upload  --token=0b1971cd-f533-49b0-a47d-aa5141ba6fc1 --serverBaseUrl=http://localhost:9001
+
+```
+
+Repeat the above steps for: `index-0.html`, `index-1.html`, `index-2.html`, etc.
+
+
+## 2. Start LHCI server
 
     cd server
     docker-compose up -d
@@ -8,7 +35,7 @@
     http://localhost:9001
 
 
-## 2. Run LHCI wizard:
+## 3. Run LHCI wizard:
 
     lhci wizard
 
@@ -22,21 +49,21 @@
     Use build token 0b1971cd-f533-49b0-a47d-aa5141ba6fc1 to add data.
     Use admin token PmKEPJDWx5HYDl947pfTmAcPRSPoMmyBHXu1pRGa to manage data. KEEP THIS SECRET!
 
-## 3. Run LHCI to create data
+## 4. Run LHCI to create data
 
     cd run
     lhci collect --staticDistDir=./../static-content
 
-## 4. Run LHCI to upload data
+## 5. Run LHCI to upload data
 
     lhci upload  --token=0b1971cd-f533-49b0-a47d-aa5141ba6fc1 --serverBaseUrl=http://localhost:9001
 
-## 5. Destroy
+## 6. Destroy
 
     docker-clear-containers.sh
     docker-clear-volumes.sh
 
-## 6. How to use served website
+## 7. How to use served website?
 
 Start:
 
@@ -52,22 +79,3 @@ Run analysis:
 
     lhci collect --url=http://localhost:8080
 
-## 7. Procedure
-
-- start the server
-- run the wizard
-- work in main branch: create a web page, analyze it and upload data to server
-
-Steps for first version of webpage:
-
-1. Create first web page `index-0.html` in `static-content/`
-2. Commit the page in main branch
-3. Analyze the page with:
-
-    lhci collect --staticDistDir=./../static-content
-
-4. Upload results:
-
-   lhci upload  --token=0b1971cd-f533-49b0-a47d-aa5141ba6fc1 --serverBaseUrl=http://localhost:9001
-
-Repeat the above steps for: index-0.html, index-1.html, index-2.html, etc.
