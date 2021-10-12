@@ -25,9 +25,9 @@
     Where is the project's code hosted? https://github.com/gajdaw/lhci-poc
     What branch is considered the repo's trunk or main branch? main
 
-    Created project lhci-poc (83f850b5-2bbf-4184-8671-a6eb78273155)!
-    Use build token 4e372fc5-85b5-4b1d-977b-77ccbefd46bb to add data.
-    Use admin token Ah3S4ec5srCk7aljUh5BrRUinrf8vrtl13HAClgH to manage data. KEEP THIS SECRET!
+    Created project lhci-poc (3854b376-392a-4507-8675-5d1567b03878)!
+    Use build token 0b1971cd-f533-49b0-a47d-aa5141ba6fc1 to add data.
+    Use admin token PmKEPJDWx5HYDl947pfTmAcPRSPoMmyBHXu1pRGa to manage data. KEEP THIS SECRET!
 
 ## 4. Run LHCI to create data
 
@@ -37,7 +37,7 @@
 
 ## 5. Run LHCI 
 
-    lhci upload  --token=4e372fc5-85b5-4b1d-977b-77ccbefd46bb --serverBaseUrl=http://localhost:9001
+    lhci upload  --token=0b1971cd-f533-49b0-a47d-aa5141ba6fc1 --serverBaseUrl=http://localhost:9001
 
 ## 6. Destroy
 
