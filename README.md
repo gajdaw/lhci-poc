@@ -38,3 +38,7 @@
 
     lhci upload  --token=1ae0d142-c7ab-4375-b358-9cbee85127ed --serverBaseUrl=http://localhost:9001
 
+## 6. Destroy
+
+    docker-clear-containers.sh
+    docker-clear-volumes.sh
