@@ -33,6 +33,7 @@
 
     cd run
     lhci collect --url=http://localhost:8080
+    lhci collect --staticDistDir=static-content
 
 ## 5. Run LHCI 
 
