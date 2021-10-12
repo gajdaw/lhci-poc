@@ -21,13 +21,13 @@
 
     Which wizard do you want to run? new-project
     What is the URL of your LHCI server? http://localhost:9001
-    What would you like to name the project? some-interesting-project
-    Where is the project's code hosted? git@github.com:gajdaw/lhci-poc.git
+    What would you like to name the project? lhci-poc
+    Where is the project's code hosted? https://github.com/gajdaw/lhci-poc
     What branch is considered the repo's trunk or main branch? main
 
-    Created project hello-world-project (e2ccdf45-301e-4032-b0a4-bc9f97a61469)!
-    Use build token 1ae0d142-c7ab-4375-b358-9cbee85127ed to add data.
-    Use admin token NEvJavbCo8hjUyRaMP8NJo1QfJnrbI3Qcp1hBdyR to manage data. KEEP THIS SECRET!
+    Created project lhci-poc (72825ba9-9576-4fb7-ad5f-ef06578e25b2)!
+    Use build token ad4ddd4a-be8d-441e-ac5e-ca9741b3339b to add data.
+    Use admin token h1TnomIwI8xV2q5KQiVmfaO97tbc6gdfhV4eDgHm to manage data. KEEP THIS SECRET!
 
 ## 4. Run LHCI to create data
 
