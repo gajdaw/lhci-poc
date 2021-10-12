@@ -51,3 +51,23 @@ Test:
 Run analysis:
 
     lhci collect --url=http://localhost:8080
+
+## 7. Procedure
+
+- start the server
+- run the wizard
+- work in main branch: create a web page, analyze it and upload data to server
+
+Steps for first version of webpage:
+
+1. Create first web page `index-0.html` in `static-content/`
+2. Commit the page in main branch
+3. Analyze the page with:
+
+    lhci collect --staticDistDir=./../static-content
+
+4. Upload results:
+
+   lhci upload  --token=0b1971cd-f533-49b0-a47d-aa5141ba6fc1 --serverBaseUrl=http://localhost:9001
+
+Repeat the above steps for: index-0.html, index-1.html, index-2.html, etc.
