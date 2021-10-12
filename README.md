@@ -36,7 +36,7 @@
 
 ## 5. Run LHCI 
 
-    lhci upload  --token=1ae0d142-c7ab-4375-b358-9cbee85127ed --serverBaseUrl=http://localhost:9001
+    lhci upload  --token=ad4ddd4a-be8d-441e-ac5e-ca9741b3339b --serverBaseUrl=http://localhost:9001
 
 ## 6. Destroy
 
